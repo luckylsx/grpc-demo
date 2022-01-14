@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package helloworld.v1;
+
+option go_package = "server/proto/hello/v1;v1";
+option java_multiple_files = true;
+option java_package = "dev.kratos.api.helloworld.v1";
+option java_outer_classname = "HelloWorldProtoV1";
+
+service User {
+    rpc UserRegister (UserRegisterRequest) returns (UserRegisterResponse);
+}
+
+message UserRegisterRequest {
+    string name = 1;
+    int32 age = 2;
+    repeated string like = 3;
+}
+
+message UserRegisterResponse {
+    int64 id = 1;
+    string name = 2;
+    int32 age = 3;
+    repeated string like = 4;
+}
