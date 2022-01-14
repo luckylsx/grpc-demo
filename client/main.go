@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	v1 "github.com/luckylsx/rpc-demo/server/server/proto/v1"
+	v1 "github.com/luckylsx/rpc-demo/server/proto/v1"
 
 	"google.golang.org/grpc"
 )

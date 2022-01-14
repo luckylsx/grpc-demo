@@ -1,4 +1,4 @@
-module github.com/luckylsx/rpc-demo/server
+module github.com/luckylsx/rpc-demo
 
 go 1.16
 
